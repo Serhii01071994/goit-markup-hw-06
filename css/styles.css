@@ -118,7 +118,6 @@ img {
   transition: color var(--timing-animatiom);
 }
 
-
 .link-style:hover,
 .link-style:focus {
   color: var(--nav-hover);
@@ -135,8 +134,8 @@ img {
   transition: color var(--timing-animatiom);
 }
 
-.link-style.current{
- color: var(--nav-hover);
+.link-style.current {
+  color: var(--nav-hover);
 }
 
 .link-style.current::after,
@@ -459,7 +458,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: background-color var(--timing-animatiom);;
+  transition: background-color var(--timing-animatiom);
 }
 .footer-social-icon:hover,
 .footer-social-icon:focus {
@@ -495,9 +494,8 @@ img {
   cursor: pointer;
   padding: 12px 24px;
   transition: background-color var(--timing-animatiom),
-  color var(--timing-animatiom),
-  border var(--timing-animatiom),
-  box-shadow var(--timing-animatiom);
+    color var(--timing-animatiom), border var(--timing-animatiom),
+    box-shadow var(--timing-animatiom);
 }
 
 .btn-item:hover,
@@ -647,4 +645,22 @@ img {
 .modal-btn-close:focus {
   background: #404bbf;
   fill: var(--social-footer);
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 360px;
+  height: 336px;
+  left: 540px;
+  top: 192px;
+
+  border-radius: 4px;
+}
+.modal-icon {
+  fill: var(--main-color);
 }
