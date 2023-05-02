@@ -423,6 +423,9 @@ img {
   letter-spacing: 0.02em;
   width: 264px;
 }
+.footer-style{
+  margin-right: 120px;
+}
 
 .logo-ftr {
   margin-bottom: 16px;
@@ -431,7 +434,6 @@ img {
 .footer-container-style {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 .footer-social {
   font-style: normal;
@@ -467,40 +469,41 @@ img {
   background: #31d0aa;
 }
 .social-ftr {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
 }
-.ftr-input{
+.ftr-form{
+  margin-left: auto;
+}
+.ftr-input {
   width: 264px;
   height: 40px;
   background-color: transparent;
   border: 1px solid var(--backgrnd-site);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-padding-left: 16px;
-padding-right: 16px;
-color: var(--btn-hero-text);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--btn-hero-text);
 }
-.ftr-input::placeholder{
+.ftr-input::placeholder {
   font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 2;
-letter-spacing: 0.04em;
-color: var(--btn-hero-text);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--btn-hero-text);
 }
-.subscribe-box{
+.subscribe-box {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.btn-ftr{
+.btn-ftr {
   display: flex;
   gap: 16px;
   padding: 8px 24px;
@@ -509,8 +512,8 @@ color: var(--btn-hero-text);
   flex-direction: row;
   justify-content: center;
   flex: none;
-order: 0;
-flex-grow: 0;
+  order: 0;
+  flex-grow: 0;
 }
 /* Portfolio */
 .portfolio {
@@ -654,8 +657,7 @@ flex-grow: 0;
 .modal {
   position: absolute;
   width: 408px;
-  height: 584px;
-  padding: 0 24px;
+  padding: 72px 24px 24px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -677,7 +679,8 @@ flex-grow: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform var(--timing-animatiom);
+  transition: background-color var(--timing-animatiom),
+    fill var(--timing-animatiom);
   cursor: pointer;
 }
 .modal-btn-close:hover,
@@ -709,10 +712,8 @@ flex-grow: 0;
 }
 .modal-title {
   display: block;
-  margin-top: 72px;
   margin-bottom: 16px;
 
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -725,7 +726,6 @@ flex-grow: 0;
 .modal-label {
   display: block;
   margin-bottom: 4px;
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -756,6 +756,8 @@ flex-grow: 0;
 }
 .modal-form-message {
   position: relative;
+  padding-top: 8px;
+  padding-left: 16px;
   width: 100%;
   resize: none;
   height: 120px;
@@ -776,7 +778,6 @@ flex-grow: 0;
   left: 16px;
   top: 8px;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -789,7 +790,7 @@ flex-grow: 0;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--modal-input);
+  color: var(--modal-label);
 }
 .link-modal {
   font-style: normal;
@@ -800,7 +801,7 @@ flex-grow: 0;
   color: var(--btn-hero);
 }
 .checboxed {
-   position: relative;
+  position: relative;
   display: flex;
   margin-bottom: 24px;
   align-items: center;
@@ -844,24 +845,22 @@ flex-grow: 0;
 .modal-agreement {
   appearance: none;
 }
-.modal-cheked-icon{
+.modal-cheked-icon {
   cursor: pointer;
 }
-.modal-agreement-icon-uncheked{
+.modal-agreement-icon-uncheked {
   opacity: 1;
   transition: var(--timing-animatiom);
 }
 
-.modal-agreement:checked + .modal-cheked-icon > .modal-agreement-icon-uncheked{
-opacity: 0;
+.modal-agreement:checked + .modal-cheked-icon > .modal-agreement-icon-uncheked {
+  opacity: 0;
 }
-.modal-agreement-icon-cheked{
+.modal-agreement-icon-cheked {
   opacity: 0;
   transition: var(--timing-animatiom);
 }
 
-.modal-agreement:checked + .modal-cheked-icon > .modal-agreement-icon-cheked{
-opacity: 1;
+.modal-agreement:checked + .modal-cheked-icon > .modal-agreement-icon-cheked {
+  opacity: 1;
 }
-
-
